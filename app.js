@@ -17,7 +17,7 @@ var completedTasksHolder=document.getElementById("completed");//completed-tasks
 //New task list item
 var createNewTaskElement=function(taskString){
 
-    var listItem=document.createElement("li");
+    var listItem=document.createElement("div");
 
     //input (checkbox)
     var checkBox=document.createElement("input");//checkbx
@@ -126,6 +126,7 @@ var taskCompleted=function(){
 
     //Append the task list item to the #completed-tasks
     var listItem=this.parentNode;
+    listItem.firstElementChild.nextElementSibling.classList.add('task__title_completed');
     completedTasksHolder.appendChild(listItem);
     bindTaskEvents(listItem, taskIncomplete);
 
@@ -138,6 +139,7 @@ var taskIncomplete=function(){
     //When the checkbox is unchecked
     //Append the task list item to the #incompleteTasks.
     var listItem=this.parentNode;
+    listItem.firstElementChild.nextElementSibling.classList.remove('task__title_completed');
     incompleteTaskHolder.appendChild(listItem);
     bindTaskEvents(listItem,taskCompleted);
 }

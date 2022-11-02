@@ -41,7 +41,7 @@
   flex-grow: 1;
 }
 
-.add-item {
+.section_add-item {
   margin-top: 1em;
   margin-bottom: 1em;
 }
@@ -80,7 +80,7 @@
 }
 
 /* Heading */
-.section-heading {
+.section__heading {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -109,7 +109,7 @@
 }
 
 /* New Task */
-.section-heading_add {
+.section__heading_add {
   display: block;
   margin: 0 0 20px;
 }
@@ -136,13 +136,13 @@
   width: 226px;
 }
 
-.delete__icon {
+.task-btn__delete-icon {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-.delete__icon:hover {
+.task-btn__delete-icon:hover {
   transform: rotateZ(0);
 }
 
@@ -157,16 +157,16 @@
   display: none;
 }
 
-.edit-mode .task-input {
+.task_edit-mode .task-input {
   display: inline-block;
   width: 224px;
 }
 
-.edit-mode .task__title {
+.task_edit-mode .task__title {
   display: none;
 }
 
-.add-task__new-task {
+.add-task__input {
   width: 318px;
   display: inline;
 }

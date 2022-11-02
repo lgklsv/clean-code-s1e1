@@ -61,11 +61,11 @@
 
 .task__check,
 .task-input,
-.task-btn{
+.btn{
   outline: none;
 }
 
-.task-btn {
+.btn {
   background: none;
   border: 0;
   color: #888;
@@ -75,7 +75,7 @@
   cursor: pointer;
 }
 
-.task-btn:hover {
+.btn:hover {
   color: #3a3a3a;
 }
 
@@ -136,13 +136,13 @@
   width: 226px;
 }
 
-.task-btn__delete-icon {
+.btn__delete-icon {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-.task-btn__delete-icon:hover {
+.btn__delete-icon:hover {
   transform: rotateZ(0);
 }
 
@@ -166,7 +166,7 @@
   display: none;
 }
 
-.add-task__input {
+.task-input_add {
   width: 318px;
   display: inline;
 }
